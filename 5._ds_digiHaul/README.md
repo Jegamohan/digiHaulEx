@@ -6,7 +6,7 @@ Operational teams rely on KPIs like on-time collection and on-time delivery to g
 
 Question: What percentage of shipments met the on-time delivery threshold (arriving no later than 30 minutes past the scheduled delivery window) between October 1st and December 31st, 2023?
 
-Assumptions:
+##Assumptions:
 
 * I have assumed that the time difference between LAST_DELIVERY_SCHEDULE_LATEST and the maximum GPS time determines if the delivery met the on-time delivery threshold.
 * The percentage of Delivery_Status = 1 is 70.49% for October, compared to an overall percentage of Delivery_Status = 2 at 62.65%. This seems significantly high.
@@ -15,9 +15,10 @@ Assumptions:
 
 Additionally, analyzing these trends could help identify specific periods or months where on-time delivery rates fluctuate, enabling us to implement targeted strategies for improvement.
 
-Model Performance and Future Enhancements
 
-My classification model is achieving an accuracy of about 70% with the current sets of data that I have. While that’s a good start, I believe there’s more data we can add to improve the accuracy.
+#Model Performance and Future Enhancements
+
+My classification model is achieving an accuracy of about 70% with the current sets of data that I have. While that’s a good start, I believe there’s more data I can add to improve the accuracy.
 
 ##Data Sources to Consider
 
