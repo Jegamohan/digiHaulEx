@@ -1,6 +1,7 @@
-Tasks
+#Tasks
 
-1. On-Time Delivery Performance Analysis
+##1. On-Time Delivery Performance Analysis
+
 Operational teams rely on KPIs like on-time collection and on-time delivery to gauge carrier performance.
 
 Question: What percentage of shipments met the on-time delivery threshold (arriving no later than 30 minutes past the scheduled delivery window) between October 1st and December 31st, 2023?
@@ -18,7 +19,7 @@ Model Performance and Future Enhancements
 
 My classification model is achieving an accuracy of about 70% with the current sets of data that I have. While that’s a good start, I believe there’s more data we can add to improve the accuracy.
 
-Data Sources to Consider
+##Data Sources to Consider
 
 1. Weather Reports: Integrating weather data could provide valuable insights into how good or bad weather impacts delivery.
 
@@ -30,6 +31,6 @@ By enriching the dataset with these additional features, I hope to not only impr
 
 
 
-Technical Design for Deploying the Prediction Model (Using AWS SageMaker)
+#Technical Design for Deploying the Prediction Model (Using AWS SageMaker)
 
 I will deploy the model in AWS SageMaker. To do this, I will first train my model in a SageMaker notebook and store the training data in an S3 bucket. I will create a Docker image that uses the trained model stored in the S3 location. Then, I will create an endpoint for the model and invoke it to obtain predictions.
